@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header id="header_content" class="p-2 pt-2 md:pt-16">
+    <header id="header_content" class="px-2 pt-8 md:pt-16">
         <div id="all_title" class="flex justify-center">
             <div class="card bg-base-100 w-full border-2 border-blue-500 max-w-md shrink-0 shadow-2xl">
                 <!-- login form start-->
@@ -56,13 +56,96 @@
                     <div class="divider"></div>
 
                     <!-- Developer Information -->
-                        <div id="dev_info_chart" class="text-xl font-black text-center uppercase">
-                            <p class="flex justify-center items-center">
-                                <img class="rounded-full shadow-lg" width="150x" src="./assets/dev_suvo.png" alt="Develper pic">
-                            </p>
-                            <h2>SUVO DATTA</h2>
-                            <h3>FONT-END DEVELOPER</h3>
-                        </div>
+                    <div id="dev_info_chart" class="text-xl font-black text-center uppercase">
+                        <p class="flex justify-center items-center">
+                            <img class="rounded-full shadow-lg" width="150x" src="./assets/dev_suvo.png" alt="Develper pic">
+                        </p>
+                        <h2>SUVO DATTA</h2>
+                        <h3>FONT-END DEVELOPER</h3>
+                    </div>
+                    
+                    <!-- All Accounting section start -->
+                     <section>
+                          <!-- Collect info form start -->
+                        <form id="input_counter_form" class="hidden card-body">
+
+                            <!-- mass member name  -->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Name</span>
+                                </label>
+                                <input id="input_name" type="text" placeholder="Enter Name" class="input input-bordered" required />
+                            </div>
+                            <!-- per menber add money-->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Add Money</span>
+                                </label>
+                                <input id="input_money" type="text" placeholder="Enter His Money" class="input input-bordered" required />
+                            </div>
+                            <!-- every Perosn total mill -->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Mill</span>
+                                </label>
+                                <input id="input_mill" type="text" placeholder="Enter His Mill" class="input input-bordered" required />
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="add_member_button" class="btn btn-primary">Add Member</button>
+                            </div>
+
+                        </form>
+                        <!-- Collect info form end -->
+
+                        <!-- member info form start -->
+                        <form id="member_information_chart" class="hidden card-body">
+
+                            <!-- mass member name  -->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Name</span>
+                                </label>
+                                <input id="input_name" type="text" placeholder="Enter Name" class="input input-bordered" required />
+                            </div>
+                            <!-- per menber add money-->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Add Money</span>
+                                </label>
+                                <input id="input_money" type="text" placeholder="Enter His Money" class="input input-bordered" required />
+                            </div>
+                            <!-- every Perosn total mill -->
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Mill</span>
+                                </label>
+                                <input id="input_mill" type="text" placeholder="Enter His Mill" class="input input-bordered" required />
+                            </div>
+                        </form>
+                        <!-- menber info form end -->
+
+                        <!-- Bazer info form start -->
+                        <form id="bazar_info_chart" class="hidden card-body">
+                            <h2 class="text-xl">Bazzer Inforamation</h2>
+                        </form>
+                        <!-- Bazer info form end -->
+
+                        <!-- total info form start -->
+                        <form id="total_info_chart" class="hidden card-body">
+                            <h2 class="text-xl">Total Account</h2>
+                        </form>
+                        <!-- total info form end -->
+
+                        <!-- Bazer info form start -->
+                        <form id="pay_info_chart" class="hidden card-body">
+                            <h2 class="text-xl">Paid Account Information</h2>
+                        </form>
+                        <!-- Bazer info form end -->
+
+                        
+                     </section>
+                    <!-- All Accounting section end -->
 
                     <!-- all fiture button -->
                     <div class="">
@@ -77,84 +160,6 @@
                     </div>
                 </section>
 
-                <!-- Collect info form start -->
-                <form id="input_counter_form" class="hidden card-body">
-
-                    <!-- mass member name  -->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Name</span>
-                        </label>
-                        <input id="input_name" type="text" placeholder="Enter Name" class="input input-bordered" required />
-                    </div>
-                    <!-- per menber add money-->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Add Money</span>
-                        </label>
-                        <input id="input_money" type="text" placeholder="Enter His Money" class="input input-bordered" required />
-                    </div>
-                    <!-- every Perosn total mill -->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Mill</span>
-                        </label>
-                        <input id="input_mill" type="text" placeholder="Enter His Mill" class="input input-bordered" required />
-                    </div>
-
-                  <div class="form-control mt-6">
-                    <button id="add_member_button" class="btn btn-primary">Add Member</button>
-                  </div>
-
-                </form>
-                <!-- Collect info form end -->
-
-                <!-- member info form start -->
-                <form id="member_information_chart" class="hidden card-body">
-
-                    <!-- mass member name  -->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Name</span>
-                        </label>
-                        <input id="input_name" type="text" placeholder="Enter Name" class="input input-bordered" required />
-                    </div>
-                    <!-- per menber add money-->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Add Money</span>
-                        </label>
-                        <input id="input_money" type="text" placeholder="Enter His Money" class="input input-bordered" required />
-                    </div>
-                    <!-- every Perosn total mill -->
-                    <div class="form-control">
-                        <label class="label">
-                        <span class="label-text">Mill</span>
-                        </label>
-                        <input id="input_mill" type="text" placeholder="Enter His Mill" class="input input-bordered" required />
-                    </div>
-                </form>
-                <!-- menber info form end -->
-
-                <!-- Bazer info form start -->
-                <form id="bazar_info_chart" class="hidden card-body">
-                    <h2 class="text-xl">Bazzer Inforamation</h2>
-                </form>
-                <!-- Bazer info form end -->
-
-                <!-- total info form start -->
-                <form id="total_info_chart" class="hidden card-body">
-                    <h2 class="text-xl">Total Account</h2>
-                </form>
-                <!-- total info form end -->
-
-                <!-- Bazer info form start -->
-                <form id="pay_info_chart" class="hidden card-body">
-                    <h2 class="text-xl">Paid Account Information</h2>
-                </form>
-                <!-- Bazer info form end -->
-
-                
             </div>
         </div>
         <div id="memebr_status" class="space-y-1 px-1 my-4"></div>
